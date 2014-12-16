@@ -1,0 +1,13 @@
+create table common_account (
+  row_id integer primary key autoincrement,
+  username text unique,
+  password text default null,
+  staysignedin integer,
+  user_db_name text unique);
+create table umpiring_details (
+    row_id integer primary key autoincrement,
+    match_id text,
+    over_no integer,
+    over_details text,
+    team_name text,
+    bowler text);
